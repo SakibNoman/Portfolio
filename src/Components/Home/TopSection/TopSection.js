@@ -1,5 +1,6 @@
 import React from 'react';
-import { Row } from 'react-bootstrap';
+import { Button, Row } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import sakibdp from '../../../images/sakib1.png';
 import './TopSection.css';
 
@@ -9,12 +10,13 @@ const TopSection = () => {
             <Row className="align-items-center" style={{ height: '600px' }} >
                 <div className="col-md-6">
                     <p>Hi, I'm</p>
-                    <h1>Noman Sakib</h1>
+                    <h1>Sakib Noman</h1>
                     <div><span>Web Developer</span> <span>Programmer</span> </div>
-                    <p className="mt-3" >A self-motivated and enthusiastic web developer with a deep interest in JavaScript. To work in the Software industry with modern web technologies of different local & multinational Software/ IT agencies of Bangladesh and grow rapidly with increasing responsibilities.</p>
+                    <p className="mt-3" >In this age of information technology, I am skilled in JavaScript (React), Express, MongoDB.
+                    Strong collaboration skills in application development, problem-solving, and analytics. I have
+solved about 300 hundred problems in various online judge.</p>
                     <div className="mt-4" >
-                        <button className="btn btn-success">About Me</button>
-                        <button className="btn btn-outline-success ml-4">Get in touch</button>
+                        <Button as={Link} to="/about" className="btn btn-success">About Me</Button>
                     </div>
                 </div>
                 <div className="col-md-6 p-5">

@@ -17,7 +17,9 @@ const About = () => {
                     </div>
                     <div>
                         <h2>Hi, I'm Sakib Noman</h2>
-                        <p>A self-motivated and enthusiastic web developer with a deep interest in JavaScript. To work in the Software industry with modern web technologies of different local & multinational Software/ IT agencies of Bangladesh and grow rapidly with increasing responsibilities.</p>
+                        <p>In this age of information technology, I am skilled in JavaScript (React), Express, MongoDB.
+                        Strong collaboration skills in application development, problem-solving, and analytics. I have
+solved about 300 hundred problems in various online judge.</p>
                     </div>
                 </div>
                 <div className="col-md-6">

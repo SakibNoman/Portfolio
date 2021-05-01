@@ -15,7 +15,9 @@ const TopNav = () => {
                     <Nav.Link as={Link} className="ml-4" to="/blogs">Blogs</Nav.Link>
                     <Nav.Link as={Link} className="ml-4" to="/contact">Contact</Nav.Link>
                 </Nav>
-                <Button variant="outline-success" className="ml-4" >Resume</Button>
+                <a href="https://drive.google.com/uc?export=download&id=1bvWFgbl9FN7ooDEqlYrWmh1yY22XyoYq">
+                    <Button variant="outline-success" className="ml-4" >Resume</Button>
+                </a>
             </Navbar.Collapse>
         </Navbar>
     );
