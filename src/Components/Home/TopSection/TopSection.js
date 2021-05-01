@@ -1,10 +1,11 @@
 import React from 'react';
 import { Row } from 'react-bootstrap';
 import sakibdp from '../../../images/sakib1.png';
+import './TopSection.css';
 
 const TopSection = () => {
     return (
-        <div className="container">
+        <div className="container my-5 py-5 py-md-0 my-md-0">
             <Row className="align-items-center" style={{ height: '600px' }} >
                 <div className="col-md-6">
                     <p>Hi, I'm</p>
@@ -16,8 +17,8 @@ const TopSection = () => {
                         <button className="btn btn-outline-success ml-4">Get in touch</button>
                     </div>
                 </div>
-                <div className="col-md-6">
-                    <img src={sakibdp} alt="" />
+                <div className="col-md-6 p-5">
+                    <img className="img-fluid" src={sakibdp} alt="" />
                 </div>
             </Row>
         </div>
