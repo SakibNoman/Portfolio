@@ -1,3 +1,4 @@
+import ParticlesBg from 'particles-bg';
 import React from 'react';
 import { Container, Row } from 'react-bootstrap';
 import blogImg from '../../../images/blog.jpeg';
@@ -22,6 +23,7 @@ const Blogs = () => {
                     blogs.map(each => <BlogCard key={each.id} info={each} ></BlogCard>)
                 }
             </Row>
+            <ParticlesBg type="color" bg={true} />
         </Container>
     );
 };

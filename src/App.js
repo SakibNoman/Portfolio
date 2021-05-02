@@ -29,7 +29,7 @@ function App() {
           <TopNav></TopNav>
           <Portfolios></Portfolios>
         </Route>
-        <Route path="/contact" >
+        <Route path="/contact/:isContact" >
           <TopNav></TopNav>
           <Contact></Contact>
         </Route>

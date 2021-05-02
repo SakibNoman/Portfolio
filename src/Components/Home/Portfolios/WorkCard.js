@@ -1,11 +1,11 @@
 import React from 'react';
 import { Badge, Card, ListGroup, ListGroupItem } from 'react-bootstrap';
 
-const WorkCard = ({ info }) => {
-    const { name, image, desc, tools, repo, live } = info
+const WorkCard = ({ info, key }) => {
+    const { name, image, desc, tools, repo, live, id } = info
     return (
         <div className="col-md-4 justify-content-center d-flex">
-            <Card className="my-3 shadow" style={{ width: '22rem' }}>
+            <Card key={id} className="my-3 shadow" style={{ width: '22rem' }}>
                 <Card.Img variant="top" src={image} />
                 <Card.Body>
                     <Card.Title>{name}</Card.Title>

@@ -1,3 +1,4 @@
+import ParticlesBg from 'particles-bg';
 import React from 'react';
 import { Button, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
@@ -23,6 +24,7 @@ solved about 300 hundred problems in various online judge.</p>
                     <img className="img-fluid" src={sakibdp} alt="" />
                 </div>
             </Row>
+            <ParticlesBg type="polygon" bg={true} />
         </div>
     );
 };

@@ -1,5 +1,7 @@
+import ParticlesBg from 'particles-bg';
+import QueueAnim from 'rc-queue-anim';
 import React from 'react';
-import { Container, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import callingImg from '../../../images/Calling-Cabs.png';
 import gentsImg from '../../../images/Gents-Glamor.png';
 import refreshImg from '../../../images/Refresh-Professional-Painting-Service.png';
@@ -39,11 +41,12 @@ const Portfolios = () => {
     return (
         <Container className="mt-5 pt-5 pt-md-0 mt-md-0" >
             <h2 className="text-center" >Portfolios</h2>
-            <Row className="justify-content-center my-5" >
+            <QueueAnim type="scale" className="row justify-content-center my-5" >
                 {
                     works.map(each => <WorkCard key={each.id} info={each} ></WorkCard>)
                 }
-            </Row>
+            </QueueAnim>
+            <ParticlesBg type="polygon" bg={true} />
         </Container>
     );
 };

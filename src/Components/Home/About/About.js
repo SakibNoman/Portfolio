@@ -1,3 +1,5 @@
+import ParticlesBg from 'particles-bg';
+import QueueAnim from 'rc-queue-anim';
 import React from 'react';
 import { Badge, Row } from 'react-bootstrap';
 import sakibdp2 from '../../../images/sakib2.png';
@@ -22,27 +24,28 @@ const About = () => {
 solved about 300 hundred problems in various online judge.</p>
                     </div>
                 </div>
-                <div className="col-md-6">
+                <QueueAnim className="col-md-6">
                     <h2>Skills</h2>
-                    <div className="mt-3">
+                    <div key="1" className="mt-3">
                         <h5>Expertise</h5>
                         {Expertise.map(each => <h5 className="d-inline" ><Badge className="mr-3 mb-2" variant="dark" >{each}</Badge></h5>)}
                     </div>
-                    <div className="mt-3">
+                    <div key="2" className="mt-3">
                         <h5>Comfortable</h5>
                         {Comfortable.map(each => <h5 className="d-inline" ><Badge className="mr-3 mb-2" variant="dark" >{each}</Badge></h5>)}
                     </div>
-                    <div className="mt-3">
+                    <div key="3" className="mt-3">
                         <h5>Familiar</h5>
                         {Familiar.map(each => <h5 className="d-inline" ><Badge className="mr-3 mb-2" variant="dark" >{each}</Badge></h5>)}
                     </div>
-                    <div className="mt-3">
+                    <div key="4" className="mt-3">
                         <h5>Tools</h5>
                         {Tools.map(each => <h5 className="d-inline" ><Badge className="mr-3 mb-2" variant="dark" >{each}</Badge></h5>)}
                     </div>
-                </div>
+                </QueueAnim>
 
             </Row>
+            <ParticlesBg type="ball" bg={true} />
         </div>
     );
 };
