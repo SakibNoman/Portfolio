@@ -7,7 +7,7 @@ const BlogCard = ({ info }) => {
         <div className="col-md-4 justify-content-center d-flex">
             <a href={url} rel="noreferrer" className="text-secondary text-decoration-none" target="_blank">
                 <Card className="my-3 shadow" style={{ width: '20rem' }}>
-                    <Card.Img variant="top" src={image} />
+                    <Card.Img style={{ height: '200px' }} variant="top" src={image} />
                     <Card.Body >
                         <Card.Title>{title}</Card.Title>
                         <Card.Text>

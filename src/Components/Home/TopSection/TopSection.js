@@ -6,12 +6,12 @@ import './TopSection.css';
 
 const TopSection = () => {
     return (
-        <div className="container my-5 py-5 py-md-0 my-md-0">
-            <Row className="align-items-center" style={{ height: '600px' }} >
+        <div className="container">
+            <Row className="align-items-center" >
                 <div className="col-md-6">
                     <p>Hi, I'm</p>
                     <h1>Sakib Noman</h1>
-                    <div><span>Web Developer</span> <span>Programmer</span> </div>
+                    <div><span><h5>Front End Developer</h5></span></div>
                     <p className="mt-3" >In this age of information technology, I am skilled in JavaScript (React), Express, MongoDB.
                     Strong collaboration skills in application development, problem-solving, and analytics. I have
 solved about 300 hundred problems in various online judge.</p>

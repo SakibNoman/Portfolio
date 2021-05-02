@@ -17,7 +17,7 @@ const Contact = () => {
 
     return (
         <section className="d-flex justify-content-center " >
-            <form onSubmit={sendEmail} className="w-50 p-md-5 p-0 mt-3 shadow" >
+            <form onSubmit={sendEmail} className="col-md-4 p-md-3 p-2 mt-3 shadow" >
                 <h2 className="text-center" >Get In Touch</h2>
                 <input className="form-control mt-3" placeholder="Your Name" type="text" name="name" id="" />
                 <input className="form-control mt-3" placeholder="Your Email" type="email" name="email" id="" />

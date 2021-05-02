@@ -15,7 +15,7 @@ const blogs = [
 
 const Blogs = () => {
     return (
-        <Container className="mt-5 pt-5 pt-md-0 mt-md-0" >
+        <Container className="" >
             <h2 className="text-center" >Blogs</h2>
             <Row className="justify-content-center my-5" >
                 {
