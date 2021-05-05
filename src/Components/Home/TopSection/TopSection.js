@@ -3,6 +3,7 @@ import React from 'react';
 import { Button, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import sakibdp from '../../../images/sakib1.png';
+import Social from '../../Shared/Social/Social';
 import './TopSection.css';
 
 const TopSection = () => {
@@ -16,6 +17,9 @@ const TopSection = () => {
                     <p className="mt-3" >In this age of information technology, I am skilled in JavaScript (React), Express, MongoDB.
                     Strong collaboration skills in application development, problem-solving, and analytics. I have
 solved about 300 hundred problems in various online judge.</p>
+                    <div>
+                        <Social></Social>
+                    </div>
                     <div className="mt-4" >
                         <Button as={Link} to="/about" className="btn btn-success">About Me</Button>
                     </div>

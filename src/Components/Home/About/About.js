@@ -3,6 +3,7 @@ import QueueAnim from 'rc-queue-anim';
 import React from 'react';
 import { Badge, Row } from 'react-bootstrap';
 import sakibdp2 from '../../../images/sakib2.png';
+import Social from '../../Shared/Social/Social';
 
 const Expertise = ["JavaScript", "React", "REST API", "React Bootstrap", "Bootstrap", "HTML", "CSS"]
 const Comfortable = ["Node.js", "Express.js", "MongoDB", "JSON", "C", "C++", "jQuery", "PHP"]
@@ -22,6 +23,9 @@ const About = () => {
                         <p>In this age of information technology, I am skilled in JavaScript (React), Express, MongoDB.
                         Strong collaboration skills in application development, problem-solving, and analytics. I have
 solved about 300 hundred problems in various online judge.</p>
+                    </div>
+                    <div>
+                        <Social></Social>
                     </div>
                 </div>
                 <QueueAnim className="col-md-6">
