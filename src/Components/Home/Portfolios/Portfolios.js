@@ -20,7 +20,7 @@ const works = [
         id: 2,
         name: 'Gents Glamor',
         image: gentsImg,
-        desc: 'User can buy products and see their ordered history.Admin can add products',
+        desc: '1. User can take different services, and track the state of services, pay online.2. Admin can add/delete services, change the state of services.3. User can add a review, and these are shown on the home page.',
         tools: ["React.js", "Node.js", "Express.js", "MongoDB", "Firebase"],
         repo: 'https://github.com/SakibNoman/Gents-Glamor-Client',
         live: 'https://gents-glamor.web.app/'

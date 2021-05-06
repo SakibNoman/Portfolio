@@ -1,4 +1,5 @@
 import emailjs from 'emailjs-com';
+import ParticlesBg from 'particles-bg';
 import React from 'react';
 
 const Contact = () => {
@@ -24,6 +25,7 @@ const Contact = () => {
                 <textarea className="form-control bg-transparent mt-3" required placeholder="Your Message" name="messages" id="" cols="30" rows="10"></textarea>
                 <input type="submit" className="form-control mt-3 btn-success" value="Send" ></input>
             </form>
+            <ParticlesBg type="polygon" bg={true} />
         </section>
     );
 };
