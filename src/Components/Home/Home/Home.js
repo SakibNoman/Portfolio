@@ -1,3 +1,4 @@
+import ParticlesBg from 'particles-bg';
 import React from 'react';
 import Footer from '../../Shared/Footer/Footer';
 import TopNav from '../../Shared/TopNav/TopNav';
@@ -13,6 +14,7 @@ const Home = () => {
             <Portfolios></Portfolios>
             <Blogs></Blogs>
             <Footer></Footer>
+            <ParticlesBg type="polygon" bg={true} />
         </section>
     );
 };

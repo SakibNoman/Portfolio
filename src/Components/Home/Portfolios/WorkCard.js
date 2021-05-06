@@ -1,5 +1,6 @@
 import React from 'react';
 import { Badge, Card, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { GoLinkExternal, GoMarkGithub } from "react-icons/go";
 
 const WorkCard = ({ info, key }) => {
     const { name, image, desc, tools, repo, live, id } = info
@@ -17,8 +18,8 @@ const WorkCard = ({ info, key }) => {
                     <ListGroupItem>{tools.map(each => <h5 className="d-inline mr-2" ><Badge variant="dark" pill>{each}</Badge></h5>)}</ListGroupItem>
                 </ListGroup>
                 <Card.Body>
-                    <Card.Link className="text-dark" target="_blank" href={repo}>Github Repo</Card.Link>
-                    <Card.Link className="text-dark" target="_blank" href={live}>Live Preview</Card.Link>
+                    <Card.Link className="text-dark" target="_blank" href={repo}><GoMarkGithub fontSize="25px" /> <small>Code</small> </Card.Link>
+                    <Card.Link className="text-dark" target="_blank" href={live}><GoLinkExternal fontSize="25px" /> <small>Live</small> </Card.Link>
                 </Card.Body>
             </Card>
         </div>

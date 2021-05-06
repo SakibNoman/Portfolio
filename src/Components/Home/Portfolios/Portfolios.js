@@ -1,4 +1,3 @@
-import ParticlesBg from 'particles-bg';
 import QueueAnim from 'rc-queue-anim';
 import React from 'react';
 import { Container } from 'react-bootstrap';
@@ -46,7 +45,6 @@ const Portfolios = () => {
                     works.map(each => <WorkCard key={each.id} info={each} ></WorkCard>)
                 }
             </QueueAnim>
-            <ParticlesBg type="polygon" bg={true} />
         </Container>
     );
 };
