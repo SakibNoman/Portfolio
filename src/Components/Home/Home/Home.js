@@ -14,7 +14,7 @@ const Home = () => {
             <Portfolios></Portfolios>
             <Blogs></Blogs>
             <Footer></Footer>
-            <ParticlesBg type="polygon" bg={true} />
+            <ParticlesBg type="polygon" num={1} bg={true} />
         </section>
     );
 };

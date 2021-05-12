@@ -49,7 +49,7 @@ solved about 300 hundred problems in various online judge.</p>
                 </QueueAnim>
 
             </Row>
-            <ParticlesBg type="ball" bg={true} />
+            <ParticlesBg type="ball" num={1} bg={true} />
         </div>
     );
 };
