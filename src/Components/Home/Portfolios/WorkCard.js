@@ -25,8 +25,8 @@ const WorkCard = ({ info, key }) => {
                         <ListGroupItem>{tools.map(each => <h5 className="d-inline mr-2" ><Badge variant="dark">{each}</Badge></h5>)}</ListGroupItem>
                     </ListGroup>
                     <Card.Body>
-                        <Card.Link className="text-dark" target="_blank" href={repo}><GoMarkGithub fontSize="25px" /> <small>Code</small> </Card.Link>
-                        <Card.Link className="text-dark" target="_blank" href={live}><GoLinkExternal fontSize="25px" /> <small>Live</small> </Card.Link>
+                        <Card.Link className="text-dark" target="_blank" href={repo}><GoMarkGithub fontSize="25px" className="social-icon" /> <small>Code</small> </Card.Link>
+                        <Card.Link className="text-dark" target="_blank" href={live}><GoLinkExternal fontSize="25px" className="social-icon" /> <small>Live</small> </Card.Link>
                     </Card.Body>
                 </div>
             </Card>

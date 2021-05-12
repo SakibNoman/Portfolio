@@ -23,7 +23,7 @@ solved about 300 hundred problems in various online judge.</p>
                     <div className="mt-4" >
                         <Button as={Link} to="/about" className="btn btn-success">About Me</Button>
                         <a href="https://drive.google.com/uc?export=download&id=1bvWFgbl9FN7ooDEqlYrWmh1yY22XyoYq">
-                            <Button variant="outline-success" className="ml-4" > <GoCloudDownload /> Resume</Button>
+                            <Button variant="outline-success" className="ml-4" > <GoCloudDownload className="social-icon" /> Resume</Button>
                         </a>
                     </div>
                 </div>
