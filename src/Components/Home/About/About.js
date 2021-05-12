@@ -19,7 +19,7 @@ const About = () => {
                         <img className="w-50" src={sakibdp2} alt="" ></img>
                     </div>
                     <div>
-                        <h2>Hi, I'm Sakib Noman</h2>
+                        <h2>Hi, I'm Abdullah Al Noman Sakib</h2>
                         <p>In this age of information technology, I am skilled in JavaScript (React), Express, MongoDB.
                         Strong collaboration skills in application development, problem-solving, and analytics. I have
 solved about 300 hundred problems in various online judge.</p>

@@ -12,7 +12,7 @@ const TopSection = () => {
             <Row className="align-items-center" >
                 <div className="col-md-6">
                     <p>Hi, I'm</p>
-                    <h1>Sakib Noman</h1>
+                    <h1>Abdullah Al Noman Sakib</h1>
                     <div><span><h5>Front End Developer</h5></span></div>
                     <p className="mt-3" >In this age of information technology, I am skilled in JavaScript (React), Express, MongoDB.
                     Strong collaboration skills in application development, problem-solving, and analytics. I have
