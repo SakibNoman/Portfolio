@@ -58,7 +58,7 @@ const Portfolios = () => {
     return (
         <Container className="mt-5 pt-5 pt-md-0 mt-md-0" >
             <h2 className="text-center" >Portfolios</h2>
-            <QueueAnim type="scale" className="row justify-content-center my-5" >
+            <QueueAnim type="scale" className="row justify-content-center my-5 px-3 mx-0" >
                 {
                     works.map(each => <WorkCard key={each.id} info={each} ></WorkCard>)
                 }
