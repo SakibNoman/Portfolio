@@ -1,3 +1,6 @@
 * {
   font-family: "Titillium Web", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
