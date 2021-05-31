@@ -9,7 +9,7 @@ const TopNav = () => {
     const { isContact } = useParams()
 
     return (
-        <Navbar bg="white" className="sticky-top p-0" expand="lg">
+        <Navbar bg="transparent" className="sticky-top p-0" expand="lg">
             <Navbar.Brand as={Link} className="text-dark" to="/home"> <img width="250px" src={signature} alt="" /> </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
