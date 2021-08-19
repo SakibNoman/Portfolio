@@ -35,7 +35,7 @@ const works = [
         image2: gentsImg2,
         image3: gentsImg3,
         image4: gentsImg4,
-        desc: 'Calling Cabs is a react app where you can find various types of transport system. We provide services of Family tour, Emergency transport, Goods transportation on reasonable price. This app is easy to use. Just select your desire vehicle and choose your pick up point and destination you will see it on map also.Thank you!',
+        desc: 'User can buy products,see their ordered products. Admin can add new product and,delete existing product. Admin can see all ordered products. User have to login to buy products. User specific data will save in database. Currently Admin panel is open for all user.',
         tools: ["React.js", "Node.js", "Express.js", "MongoDB", "Firebase"],
         repo: 'https://github.com/SakibNoman/Gents-Glamor-Client',
         live: 'https://gents-glamor.web.app/'
@@ -47,7 +47,7 @@ const works = [
         image2: callingImg2,
         image3: callingImg3,
         image4: callingImg4,
-        desc: 'User can buy products,see their ordered products. Admin can add new product and,delete existing product. Admin can see all ordered products. User have to login to buy products. User specific data will save in database. Currently Admin panel is open for all user.',
+        desc: 'Calling Cabs is a react app where you can find various types of transport system. We provide services of Family tour, Emergency transport, Goods transportation on reasonable price. This app is easy to use. Just select your desire vehicle and choose your pick up point and destination you will see it on map also.Thank you!',
         tools: ["React", "React Router", "Firebase"],
         repo: 'https://github.com/SakibNoman/Calling-Cabs/',
         live: 'https://calling-cabss.web.app/'

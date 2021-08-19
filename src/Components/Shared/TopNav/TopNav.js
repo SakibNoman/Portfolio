@@ -1,17 +1,27 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Nav, Navbar } from 'react-bootstrap';
-import { Link, useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import signature from '../../../images/signature.png';
 import './TopNav.css';
 
 const TopNav = () => {
 
-    const { isContact } = useParams()
+    const [offset, setOffset] = useState(0);
+
+    useEffect(() => {
+        window.onscroll = () => {
+            setOffset(window.pageYOffset)
+        }
+    }, []);
+
+    console.log(offset);
+
+    // const { isContact } = useParams()
 
     return (
-        <Navbar bg="transparent" className="sticky-top p-0" expand="lg">
-            <Navbar.Brand as={Link} className="text-dark" to="/home"> <img width="250px" src={signature} alt="" /> </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar bg="white" className={`sticky-top p-0 ${offset > 5 ? 'navbarCustom' : ''}`} expand="lg">
+            <Navbar.Brand as={Link} className="text-dark" to="/home"> <img className="navImage" width="250px" src={signature} alt="" /> </Navbar.Brand>
+            <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggleBtn" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
                     <Nav.Link as={Link} data-toggle="collapse" data-target=".navbar-collapse.show" className="navvy text-dark ml-md-0 ml-4" to="/home">Home</Nav.Link>

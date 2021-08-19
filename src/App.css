@@ -4,3 +4,18 @@
 html {
   scroll-behavior: smooth;
 }
+.navbarCustom {
+  box-shadow: 0 0 8px rgba(7, 110, 7, 0.336);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transform: scaleZ(1.5);
+  transition: all 300ms ease-in-out;
+}
+@media only screen and (max-width: 600px) {
+  .navImage {
+    margin-left: -70px;
+  }
+  .toggleBtn {
+    margin-right: 15px;
+  }
+}
