@@ -26,7 +26,7 @@ function App() {
           <TopNav></TopNav>
           <About></About>
         </Route>
-        <Route path="/portfolio" >
+        <Route path="/portfolio">
           <TopNav></TopNav>
           <Portfolios></Portfolios>
         </Route>

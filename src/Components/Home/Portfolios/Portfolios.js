@@ -1,5 +1,6 @@
-import React from 'react';
-import { Container } from 'react-bootstrap';
+import React, { useEffect } from 'react';
+import { Container, Row } from 'react-bootstrap';
+import { Link, useLocation } from 'react-router-dom';
 import callingImg1 from '../../../images/Calling-Cabs.png';
 import callingImg2 from '../../../images/Calling-Cabs2.png';
 import callingImg3 from '../../../images/Calling-Cabs3.png';
@@ -54,6 +55,13 @@ const works = [
 ]
 
 const Portfolios = () => {
+
+    const isPortfolio = useLocation().pathname === '/portfolio';
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+    }, [])
+
     return (
         <Container className="pt-2 pt-md-0 mt-md-0" >
             <h2 className="text-center" >Portfolios</h2>
@@ -62,6 +70,7 @@ const Portfolios = () => {
                     works.map(each => <WorkCard key={each.id} info={each} ></WorkCard>)
                 }
             </div>
+            <div className="mb-5 text-center "><Row as={Link} to="/portfolio" className={`text-decoration-none  ${isPortfolio ? "d-none" : "d-block"}`} ><button className="btn btn-outline-success">See more projects</button></Row></div>
         </Container>
     );
 };
