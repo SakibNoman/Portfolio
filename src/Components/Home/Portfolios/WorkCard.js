@@ -1,6 +1,7 @@
-import { Carousel } from '3d-react-carousal';
 import React from 'react';
 import { Badge, Card, ListGroup, ListGroupItem } from 'react-bootstrap';
+import Carousel from 'react-gallery-carousel';
+import 'react-gallery-carousel/dist/index.css';
 import { GoLinkExternal, GoMarkGithub } from "react-icons/go";
 
 const WorkCard = ({ info, key }) => {
@@ -8,11 +9,22 @@ const WorkCard = ({ info, key }) => {
     const slides = [
         <img src={image1} alt="1" />, <img src={image2} alt="2" />, <img src={image3} alt="3" />, <img src={image4} alt="3" />
     ]
+
+    const images = [image1, image2, image3, image4].map((size) => ({
+        src: `${size}`
+    }));
     return (
-        <div className="col-md-12 px-md-0 mx-3">
+        <div className="col-md-12 px-md-0">
             <Card key={id} className="my-3 shadow row flex-row">
-                <div className="col-md-6 mt-5 pt-md-4" >
-                    <Carousel className="" slides={slides} autoplay={true} interval={4000} />
+                <div className="col-md-6 m-0 p-0" >
+                    <Carousel
+                        images={images}
+                        shouldLazyLoad={false}
+                        autoPlayInterval={3000}
+                        isAutoPlaying={true}
+                        hasMediaButton={false}
+                        hasSizeButton={false}
+                    />
                 </div>
                 <div className="col-md-6" >
                     <Card.Body className="mt-0" >

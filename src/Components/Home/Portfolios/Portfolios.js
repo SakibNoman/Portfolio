@@ -1,4 +1,3 @@
-import QueueAnim from 'rc-queue-anim';
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import callingImg1 from '../../../images/Calling-Cabs.png';
@@ -56,13 +55,13 @@ const works = [
 
 const Portfolios = () => {
     return (
-        <Container className="mt-5 pt-5 pt-md-0 mt-md-0" >
+        <Container className="pt-2 pt-md-0 mt-md-0" >
             <h2 className="text-center" >Portfolios</h2>
-            <QueueAnim type="scale" className="row justify-content-center my-5 px-3 mx-0" >
+            <div type="scale" className="row justify-content-center my-5 mx-0" >
                 {
                     works.map(each => <WorkCard key={each.id} info={each} ></WorkCard>)
                 }
-            </QueueAnim>
+            </div>
         </Container>
     );
 };
