@@ -7,6 +7,7 @@ import './TopNav.css';
 const TopNav = () => {
 
     const [offset, setOffset] = useState(0);
+    // const [isNavOpen, setIsNavOpen] = useState(false);
 
     useEffect(() => {
         window.onscroll = () => {
@@ -14,15 +15,16 @@ const TopNav = () => {
         }
     }, []);
 
-    console.log(offset);
-
-    // const { isContact } = useParams()
+    // const toggleNav = () => {
+    //     isNavOpen ? setIsNavOpen(false) : setIsNavOpen(true);
+    // }
+    // console.log(isNavOpen);
 
     return (
         <Navbar bg="white" className={`sticky-top p-0 ${offset > 5 ? 'navbarCustom' : ''}`} expand="lg">
             <Navbar.Brand as={Link} className="text-dark" to="/home"> <img className="navImage" width="250px" src={signature} alt="" /> </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggleBtn" />
-            <Navbar.Collapse id="basic-navbar-nav">
+            <Navbar.Collapse id="basic-navbar-nav" className="custom-mobile-nav">
                 <Nav className="ml-auto">
                     <Nav.Link as={Link} data-toggle="collapse" data-target=".navbar-collapse.show" className="navvy text-dark ml-md-0 ml-4" to="/home">Home</Nav.Link>
                     <Nav.Link as={Link} data-toggle="collapse" data-target=".navbar-collapse.show" className="navvy text-dark ml-md-0 ml-4" to="/about">About</Nav.Link>
