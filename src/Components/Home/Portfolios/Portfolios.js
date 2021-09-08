@@ -5,6 +5,9 @@ import callingImg1 from '../../../images/Calling-Cabs.png';
 import callingImg2 from '../../../images/Calling-Cabs2.png';
 import callingImg3 from '../../../images/Calling-Cabs3.png';
 import callingImg4 from '../../../images/Calling-Cabs4.png';
+import cslImg1 from '../../../images/csl1.png';
+import cslImg2 from '../../../images/csl2.png';
+import cslImg3 from '../../../images/csl3.png';
 import gentsImg1 from '../../../images/Gents-Glamor.png';
 import gentsImg2 from '../../../images/Gents-Glamor2.png';
 import gentsImg3 from '../../../images/Gents-Glamor3.png';
@@ -51,6 +54,17 @@ const works = [
         tools: ["React", "React Router", "Firebase"],
         repo: 'https://github.com/SakibNoman/Calling-Cabs/',
         live: 'https://calling-cabss.web.app/'
+    },
+    {
+        id: 4,
+        name: 'Chittagong Super League',
+        image1: cslImg1,
+        image2: cslImg2,
+        image3: cslImg3,
+        desc: 'Chittagong Super League is a react app where you can add different type of players to your cart. A list will be created and sum of salaries of all players will be showed.Thank you!',
+        tools: ["React", "React-Bootstrap", "Font Awesome"],
+        repo: 'https://github.com/SakibNoman/Chittagong-Super-League',
+        live: 'https://eloquent-curran-574b86.netlify.app/'
     }
 ]
 

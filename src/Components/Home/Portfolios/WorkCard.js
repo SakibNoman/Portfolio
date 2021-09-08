@@ -7,7 +7,13 @@ import { GoLinkExternal, GoMarkGithub } from "react-icons/go";
 const WorkCard = ({ info, key }) => {
     const { name, image1, image2, image3, image4, desc, tools, repo, live, id } = info
 
-    const images = [image1, image2, image3, image4].map((size) => ({
+    const imageCollection = [];
+    if (image1) imageCollection.push(image1)
+    if (image2) imageCollection.push(image2)
+    if (image3) imageCollection.push(image3)
+    if (image4) imageCollection.push(image4)
+
+    const images = imageCollection.map((size) => ({
         src: `${size}`
     }));
     return (

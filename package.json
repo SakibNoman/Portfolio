@@ -1,5 +1,6 @@
 {
   "name": "portfolio-client",
+  "homepage": "http://sakib.lovestoblog.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
