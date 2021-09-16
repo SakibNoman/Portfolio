@@ -81,7 +81,7 @@ const works = [
         desc: 'Athletics Buzz is a react app where you can find useful information on various leagues of the world. Not only the information of a single sport but also all types of sports leagues information you can find in this app.',
         tools: ["React", "React Router", "Netlify", "React-Bootstrap", "Font Awesome"],
         repo: 'https://github.com/SakibNoman/Athletics-Buzz',
-        live: 'https://60490451f6a15f07d7550c29--stupefied-mestorf-a36e41.netlify.app/league/4339/Turkish%20Super%20Lig'
+        live: 'https://60490451f6a15f07d7550c29--stupefied-mestorf-a36e41.netlify.app'
     }
 ]
 
