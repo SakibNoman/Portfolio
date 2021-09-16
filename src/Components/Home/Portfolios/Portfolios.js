@@ -33,7 +33,7 @@ const works = [
         desc: "User can take different services as their need, track status of their taken services, see all order history, pay online through credit card. Admin can add new service and delete service that no longer available. Admin can view all order of services and change status of services.Admin can add new admin",
         tools: ["React.js", "Node.js", "Express.js", "MongoDB", "Firebase", "Stripe.js"],
         repo: 'https://github.com/SakibNoman/Refresh-Painting-Client',
-        live: 'https://refresh-painting.web.app/'
+        live: 'https://refresh-painting.netlify.app/'
     },
     {
         id: 2,
